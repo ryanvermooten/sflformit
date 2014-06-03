@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class TrainerTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "a trainer should enter a first name" do
+    trainer = Trainer.new
+    assert !trainer.save
+    assert !trainer.errors[:first_name].empty?
+  end
 end

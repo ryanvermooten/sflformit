@@ -4,10 +4,9 @@ one:
   first_name: MyString
   cell_number: MyString
   password: MyString
-  group_id: MyString
+
 
 two:
   first_name: MyString
   cell_number: MyString
   password: MyString
-  group_id: MyString
