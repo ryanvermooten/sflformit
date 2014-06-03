@@ -1,0 +1,33 @@
+<h1>Listing trainers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Cell number</th>
+      <th>Password</th>
+      <th>Group</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trainers.each do |trainer| %>
+      <tr>
+        <td><%= trainer.first_name %></td>
+        <td><%= trainer.cell_number %></td>
+        <td><%= trainer.password %></td>
+        <td><%= trainer.group_id %></td>
+        <td><%= link_to 'Show', trainer %></td>
+        <td><%= link_to 'Edit', edit_trainer_path(trainer) %></td>
+        <td><%= link_to 'Destroy', trainer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trainer', new_trainer_path %>
