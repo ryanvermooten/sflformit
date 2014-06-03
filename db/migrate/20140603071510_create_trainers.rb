@@ -4,7 +4,6 @@ class CreateTrainers < ActiveRecord::Migration
       t.string :first_name
       t.string :cell_number
       t.string :password
-      t.string :group_id
 
       t.timestamps
     end

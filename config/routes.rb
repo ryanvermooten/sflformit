@@ -1,4 +1,6 @@
 Sflformit::Application.routes.draw do
+  resources :students
+
   resources :trainers
 
   resources :groups
